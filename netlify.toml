@@ -1,8 +1,9 @@
 [build]
-  command = "cd app && npm run build"
-  publish = "app/dist"
-  functions = "netlify/functions"
+  base = "app"
+  command = "npm ci && npm run build"
+  publish = "dist"
+  functions = "../netlify/functions"
 
 [dev]
-  command = "cd app && npm run dev"
+  command = "npm run dev"
   port = 3000
