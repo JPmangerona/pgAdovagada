@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { MessageCircle } from 'lucide-react';
+import jessicaLima from '@/assets/jessica-lima.png';
+
 
 const Hero = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -174,7 +176,7 @@ const Hero = () => {
               {/* Main image */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/jessica-lima.png"
+                  src={jessicaLima}
                   alt="Dra. Jéssica Lima - Advogada"
                   className="w-full h-auto object-cover"
                 />
