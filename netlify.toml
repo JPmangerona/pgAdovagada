@@ -1,8 +1,6 @@
 [build]
-  base = "app"
   command = ""
-  publish = "dist"
-
+  publish = "app/dist"
 
 [dev]
   command = "npm run dev"
